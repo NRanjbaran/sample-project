@@ -1,0 +1,17 @@
+spring:
+  #database configuration
+  datasource:
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    username: Nima
+    password: 1
+    url: jdbc:sqlserver://localhost:1433;databaseName=SERP_DEMO;encrypt=true;trustServerCertificate=true;sendTimeAsDateTime=false;
+
+  jpa:
+    #JPA configuration
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.SQLServerDialect
+        format_sql: true
